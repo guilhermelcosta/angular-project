@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./first-component.component.css']
 })
 export class FirstComponentComponent {
+
+  @Input() title!: string;
 
   names = ["jogar, estudar, brincar"]
 
