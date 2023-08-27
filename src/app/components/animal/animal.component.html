@@ -1,0 +1,16 @@
+<ul>
+  <li *ngFor="let animal of animals">Nome: {{animal.name}} | Tipo: {{animal.type}}
+    <button (click)="showAge(animal)">Show age</button>
+    <button (click)="removeAnimal(animal)">Excluir</button>
+  </li>
+  <h3>{{animalDetails}}</h3>
+</ul>
+
+<form>
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Digite o nome">
+  <br>
+  <input type="text" [(ngModel)]="type" name="type" placeholder="Digite o tipo">
+  <br>
+  <input type="number" [(ngModel)]="age" name="age" placeholder="Digite a idade">
+  <button (click)="addAnimal(name, type, age)">Inserir</button>
+</form>

@@ -1,0 +1,7 @@
+<h2>Two way data biding</h2>
+<form>
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome">
+  <input type="submit" value="Enviar">
+</form>
+
+<p *ngIf="name.length > 5">O nome e: {{name}}</p>

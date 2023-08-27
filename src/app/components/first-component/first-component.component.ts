@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -9,7 +9,7 @@ export class FirstComponentComponent {
 
   @Input() title!: string;
 
-  names = ["jogar, estudar, brincar"]
+  pessoas = [{nome: "Guilherme", idade: 15}, {nome: "Rodrigo", idade: 13}, {nome: "Matheus", idade: 10}]
 
   constructor() {
   }
